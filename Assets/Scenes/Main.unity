@@ -269,10 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcdea5faa4637a646ba48af70e02598e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMaxLeft: -10.25
   cameraMaxRight: 10.25
+  cameraMaxLeft: -10.25
   cameraMaxTop: 5.25
   cameraMaxBottom: -5.25
+  panTime: 0.15
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
