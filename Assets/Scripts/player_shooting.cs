@@ -1,27 +1,38 @@
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-public class player_shooting : MonoBehaviour
+using UnityEngine.InputSystem;
+
+namespace Player.Movement
 {
-    private void Update()
+    public class player_shooting : MonoBehaviour
     {
-        //add player swivel to mouse pos
-    }
-    private void FixedUpdate()
-    {
-        int layerMask = 1 << 8;
-        layerMask = ~layerMask;
-
-        RaycastHit hit;
-
-        if(Physics.Raycast(transform.position, transform.TransformDirection(transform.up), out hit, Mathf.Infinity, layerMask))
+        [SerializeField] private ParticleSystem bubbles;
+        private void OnFire(InputValue value)
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(transform.up) * hit.distance, Color.green);
-            Debug.Log("Hit "+hit.rigidbody.gameObject.name);
+            if (value.isPressed)
+            {
+                bubbles.Play();
+            }
+            else
+            {
+                bubbles.Stop();
+            }
         }
-        else
+
+        private void OnLook(InputValue value)
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(transform.up) * 1000, Color.red);
-            Debug.Log("Didnt hit");
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
+            LookAt(mousePosition);
+        }
+        protected void LookAt(Vector3 target)
+        {
+            float lookAngle = AngleBetweenTwoPoint(transform.position, target) + 90;
+
+            transform.eulerAngles = new Vector3(0, 0, lookAngle);
+        }
+
+        private float AngleBetweenTwoPoint(Vector3 a, Vector3 b)
+        {
+            return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
         }
     }
 }
