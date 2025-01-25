@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Enemy.Health
+namespace Enemy.behaviour
 {
     public class enemy_health : MonoBehaviour
     {
