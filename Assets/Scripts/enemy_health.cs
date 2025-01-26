@@ -23,11 +23,13 @@ namespace Enemy.behaviour
         {
             if(renderer.color.r >= 0.74901961f)
             {
+                score.Score += 1;
                 renderer.color = new Color(1, 1, 1);
                 var colliders = GetComponents<Collider2D>();
                 colliders[0].enabled = false;
                 colliders[1].enabled = false;
                 GetComponent<enemy_movement>().enabled = false;
+                Destroy(this.gameObject);
             }
         }
     }
