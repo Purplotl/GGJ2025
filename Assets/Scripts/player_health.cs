@@ -10,7 +10,7 @@ namespace Player.Movement
         private bool flashing;
         static public bool dead;
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (dead)
             {
@@ -19,14 +19,31 @@ namespace Player.Movement
 
             if (player_collision.iFrames)
             {
-                Flash();
+                StartCoroutine(Flash());
             }
             else
             {
-                renderer.enabled = true;
+                renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 1);
                 flashing = false;
             }
+
         }
+
+        private IEnumerator Flash()
+        {
+            if (!flashing)
+            {
+                renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 0);
+                flashing = true;
+                yield return new WaitForSeconds(0.1f);
+            }
+            else
+            {
+                renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 1);
+                flashing = false;
+                yield return new WaitForSeconds(0.1f);
+            }
+        } 
         public void Damage(float damage)
         {
             if (player_health.dead) return;
@@ -43,21 +60,6 @@ namespace Player.Movement
                 dead = true;
             }
         }
-
-        private void Flash()
-        {
-            if (flashing)
-            {
-                renderer.enabled = false;
-                flashing = false;
-            }
-            else
-            {
-                renderer.enabled = true;
-                flashing = true;
-            }
-        }
-
         private IEnumerator ShowGameover()
         {
             yield return new WaitForSeconds(2.5f);
