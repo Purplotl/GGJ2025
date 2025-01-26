@@ -132,7 +132,9 @@ GameObject:
   - component: {fileID: 48919095}
   - component: {fileID: 48919094}
   - component: {fileID: 48919093}
+  - component: {fileID: 48919098}
   - component: {fileID: 48919092}
+  - component: {fileID: 48919097}
   m_Layer: 7
   m_Name: Chicken
   m_TagString: Untagged
@@ -204,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b84b6155380a4942a7a15528c40dfd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.75
+  speed: 3.25
 --- !u!114 &48919094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +288,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &48919097
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48919090}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.21831155, y: 1.0303837}
+  m_Size: {x: 5.631664, y: 10.176258}
+  m_Direction: 0
+--- !u!114 &48919098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48919090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905b8a5215d79c40b02acf23d26e8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 780590032}
 --- !u!1 &245288630
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +621,9 @@ GameObject:
   - component: {fileID: 642235875}
   - component: {fileID: 642235876}
   - component: {fileID: 642235878}
+  - component: {fileID: 642235881}
   - component: {fileID: 642235879}
+  - component: {fileID: 642235880}
   m_Layer: 7
   m_Name: Cow
   m_TagString: Untagged
@@ -723,6 +777,56 @@ CapsuleCollider2D:
   m_Offset: {x: -0.42177582, y: 0.32187653}
   m_Size: {x: 5.521469, y: 12.978786}
   m_Direction: 0
+--- !u!70 &642235880
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642235871}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.42177582, y: 0.32187653}
+  m_Size: {x: 5.521469, y: 12.978786}
+  m_Direction: 0
+--- !u!114 &642235881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642235871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905b8a5215d79c40b02acf23d26e8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 780590032}
 --- !u!1 &780590024
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +840,7 @@ GameObject:
   - component: {fileID: 780590030}
   - component: {fileID: 780590027}
   - component: {fileID: 780590029}
+  - component: {fileID: 780590032}
   - component: {fileID: 780590031}
   m_Layer: 6
   m_Name: Player
@@ -881,6 +986,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbles: {fileID: 1648880061}
+--- !u!114 &780590032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780590024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fff422c93282264db04e76ba10c520b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 985043758}
 --- !u!1 &985043756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1266,9 @@ GameObject:
   - component: {fileID: 1468070852}
   - component: {fileID: 1468070851}
   - component: {fileID: 1468070850}
+  - component: {fileID: 1468070855}
   - component: {fileID: 1468070849}
+  - component: {fileID: 1468070854}
   m_Layer: 7
   m_Name: Pig
   m_TagString: Untagged
@@ -1302,6 +1422,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1468070854
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468070847}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.35064936, y: 0.29381156}
+  m_Size: {x: 3.9487123, y: 12.338293}
+  m_Direction: 0
+--- !u!114 &1468070855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468070847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905b8a5215d79c40b02acf23d26e8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 780590032}
 --- !u!1 &1469554730
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,7 +6550,9 @@ GameObject:
   - component: {fileID: 1722806728}
   - component: {fileID: 1722806727}
   - component: {fileID: 1722806726}
+  - component: {fileID: 1722806732}
   - component: {fileID: 1722806730}
+  - component: {fileID: 1722806731}
   m_Layer: 7
   m_Name: Sheep
   m_TagString: Untagged
@@ -6534,6 +6706,56 @@ CapsuleCollider2D:
   m_Offset: {x: -0.27945596, y: -1.0899651}
   m_Size: {x: 10.322569, y: 10.941164}
   m_Direction: 0
+--- !u!70 &1722806731
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722806723}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.27945596, y: -1.0899651}
+  m_Size: {x: 10.322569, y: 10.941164}
+  m_Direction: 0
+--- !u!114 &1722806732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722806723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3905b8a5215d79c40b02acf23d26e8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 780590032}
 --- !u!1 &1972617671
 GameObject:
   m_ObjectHideFlags: 0
