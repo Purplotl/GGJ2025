@@ -11,6 +11,8 @@ namespace Player.Movement
 
         private void OnTriggerStay2D(Collider2D collision)
         {
+            if (player_health.dead) return;
+
             if (iFrames) return;
 
             playerHealth.Damage(0.1f);

@@ -8,6 +8,12 @@ namespace Player.Movement
         [SerializeField] private ParticleSystem bubbles;
         private void OnFire(InputValue value)
         {
+            if (player_health.dead)
+            {
+                bubbles.Stop();
+                return;
+            }
+
             if (value.isPressed)
             {
                 bubbles.Play();
@@ -20,11 +26,15 @@ namespace Player.Movement
 
         private void OnLook(InputValue value)
         {
+            if (player_health.dead) return;
+
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
             LookAt(mousePosition);
         }
         protected void LookAt(Vector3 target)
         {
+            if (player_health.dead) return;
+
             float lookAngle = AngleBetweenTwoPoint(transform.position, target) + 90;
 
             transform.eulerAngles = new Vector3(0, 0, lookAngle);

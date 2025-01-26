@@ -1,14 +1,22 @@
 using UnityEngine;
+using System.Collections;
 
 namespace Player.Movement
 {
     public class player_health : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer renderer;
+        [SerializeField] private GameObject gameOver;
         private bool flashing;
+        static public bool dead;
 
         private void FixedUpdate()
         {
+            if (dead)
+            {
+                StartCoroutine(ShowGameover());
+            }
+
             if (player_collision.iFrames)
             {
                 Flash();
@@ -21,6 +29,8 @@ namespace Player.Movement
         }
         public void Damage(float damage)
         {
+            if (player_health.dead) return;
+
             renderer.color = new Color(renderer.color.r - damage, renderer.color.g - damage, renderer.color.b - damage);
             CleanCheck();
         }
@@ -30,8 +40,7 @@ namespace Player.Movement
             if (renderer.color.r <= 0.01)
             {
                 renderer.color = new Color(0, 0, 0);
-                GetComponent<Collider2D>().enabled = false;
-                GetComponent<player_input>().enabled = false;
+                dead = true;
             }
         }
 
@@ -47,6 +56,13 @@ namespace Player.Movement
                 renderer.enabled = true;
                 flashing = true;
             }
+        }
+
+        private IEnumerator ShowGameover()
+        {
+            yield return new WaitForSeconds(2.5f);
+
+            gameOver.SetActive(true);
         }
     }
 }

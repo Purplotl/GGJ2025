@@ -17,6 +17,14 @@ namespace Player.Movement
 
         private void FixedUpdate()
         {
+            if (player_health.dead)
+            {
+                Vector3 noVelocity = new Vector3(0, 0, 0);
+
+                rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, noVelocity, ref velocity, smoothSpeed);
+                return;
+            }
+
             Vector3 targetVelocity = speed * input * Time.fixedDeltaTime;
 
             rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref velocity, smoothSpeed);
