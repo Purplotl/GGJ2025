@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c50e97e630db159469e7e9b9b808da9c
+guid: 5bf241db9859a3a40b2d6c9a61d01315
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1246277172993607343
-    second: clen-bar-fill_0
+      213: 7518033143536040685
+    second: game-over-screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clen-bar-fill_0
+      name: game-over-screen_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 348
-        width: 1435
-        height: 427
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa646fb5c7aab4110800000000000000
-      internalID: 1246277172993607343
+      spriteID: dea3412df4b655860800000000000000
+      internalID: 7518033143536040685
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      clen-bar-fill_0: 1246277172993607343
+      game-over-screen_0: 7518033143536040685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

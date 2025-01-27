@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 612ffb42aa6fdbb409a26c9a0814580a
+guid: 5fd1a05712b589f42a617d214dd64b1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4103245812459447607
-    second: Chicken 1_0
+      213: 3246317910443595381
+    second: Foliage (5)_0
+  - first:
+      213: -6462205503643552295
+    second: Foliage (5)_1
+  - first:
+      213: 1045784547624289972
+    second: Foliage (5)_2
+  - first:
+      213: -404092649868568249
+    second: Foliage (5)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +105,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chicken 1_0
+      name: Foliage (5)_0
       rect:
         serializedVersion: 2
-        x: 421
-        y: 50
-        width: 787
-        height: 1617
+        x: 681
+        y: 1576
+        width: 289
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9cade3a6ca75e07c0800000000000000
-      internalID: -4103245812459447607
+      spriteID: 5769af790fc3d0d20800000000000000
+      internalID: 3246317910443595381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (5)_1
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 1659
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d570c92552a156a0800000000000000
+      internalID: -6462205503643552295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (5)_2
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1539
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b60db8518f538e00800000000000000
+      internalID: 1045784547624289972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (5)_3
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1565
+        width: 71
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749dc3c30ef546af0800000000000000
+      internalID: -404092649868568249
       vertices: []
       indices: 
       edges: []
@@ -135,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Chicken 1_0: -4103245812459447607
+      Foliage (5)_0: 3246317910443595381
+      Foliage (5)_1: -6462205503643552295
+      Foliage (5)_2: 1045784547624289972
+      Foliage (5)_3: -404092649868568249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

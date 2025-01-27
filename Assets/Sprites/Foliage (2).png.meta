@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 582010b77b28dc245a68c43888addc07
+guid: 6c1c7a803cabd1b4db6369ce869573b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2207619908799101039
-    second: Island_0
+      213: -1392210258353960007
+    second: Foliage (2)_0
+  - first:
+      213: 8445736094728627185
+    second: Foliage (2)_1
+  - first:
+      213: -6403841835021815964
+    second: Foliage (2)_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,17 +102,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Island_0
+      name: Foliage (2)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 1460
+        y: 1648
+        width: 76
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19703f0b365fc51e0800000000000000
-      internalID: -2207619908799101039
+      spriteID: 9bb48227520edace0800000000000000
+      internalID: -1392210258353960007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (2)_1
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1587
+        width: 330
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3aef01b38453570800000000000000
+      internalID: 8445736094728627185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 1596
+        width: 88
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f2db1b7cbf027a0800000000000000
+      internalID: -6403841835021815964
       vertices: []
       indices: 
       edges: []
@@ -135,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Island_0: -2207619908799101039
+      Foliage (2)_0: -1392210258353960007
+      Foliage (2)_1: 8445736094728627185
+      Foliage (2)_2: -6403841835021815964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

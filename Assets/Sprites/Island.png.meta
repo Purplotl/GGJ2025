@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 594f3d2421c62eb4e8f787a9c84890b8
+guid: 5f2df4db5f7aeaa4bba858ddec8b9cba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6602966838755796383
-    second: Cow_0
+      213: -2207619908799101039
+    second: Island_0
+  - first:
+      213: -7673913162238094192
+    second: Island_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cow_0
+      name: Island_0
       rect:
         serializedVersion: 2
-        x: 340
-        y: 30
-        width: 791
-        height: 1641
+        x: 1050
+        y: 620
+        width: 1855
+        height: 1036
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9529b71b5372ab50800000000000000
-      internalID: 6602966838755796383
+      spriteID: 19703f0b365fc51e0800000000000000
+      internalID: -2207619908799101039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Island_1
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 590
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0949a9713a8c08590800000000000000
+      internalID: -7673913162238094192
       vertices: []
       indices: 
       edges: []
@@ -125,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cow_0: 6602966838755796383
+      Island_0: -2207619908799101039
+      Island_1: -7673913162238094192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

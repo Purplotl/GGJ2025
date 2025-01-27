@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 88ede39a9eaab954ea6afbba73846c90
+guid: 612ffb42aa6fdbb409a26c9a0814580a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7309114119975700407
-    second: clen-bar-frame_0
+      213: -4103245812459447607
+    second: Chicken 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clen-bar-frame_0
+      name: Chicken 1_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 315
-        width: 1803
-        height: 487
+        x: 421
+        y: 50
+        width: 787
+        height: 1617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b781f711903f6560800000000000000
-      internalID: 7309114119975700407
+      spriteID: 9cade3a6ca75e07c0800000000000000
+      internalID: -4103245812459447607
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      clen-bar-frame_0: 7309114119975700407
+      Chicken 1_0: -4103245812459447607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

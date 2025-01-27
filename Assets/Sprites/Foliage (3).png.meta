@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 454c0ac213d57f1479ea03b1885e0395
+guid: e495f0d8e4ec80d43805729c62c6591d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6048103533123105417
-    second: Sheep 1_0
+      213: 3618876849055039937
+    second: Foliage (3)_0
+  - first:
+      213: -8304805836815014361
+    second: Foliage (3)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheep 1_0
+      name: Foliage (3)_0
       rect:
         serializedVersion: 2
-        x: 125
-        y: 35
-        width: 1408
-        height: 1619
+        x: 2636
+        y: 541
+        width: 135
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98276908e1e2fe350800000000000000
-      internalID: 6048103533123105417
+      spriteID: 1c18fc11255d83230800000000000000
+      internalID: 3618876849055039937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foliage (3)_1
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 527
+        width: 456
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726ec0897176fbc80800000000000000
+      internalID: -8304805836815014361
       vertices: []
       indices: 
       edges: []
@@ -135,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sheep 1_0: 6048103533123105417
+      Foliage (3)_0: 3618876849055039937
+      Foliage (3)_1: -8304805836815014361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
