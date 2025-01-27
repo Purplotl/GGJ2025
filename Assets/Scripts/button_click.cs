@@ -4,6 +4,7 @@ using Player.Movement;
 
 public class button_click : MonoBehaviour
 {
+    [SerializeField] private GameObject instructions;
     public void StartGame()
     {
         player_health.dead = false;
@@ -14,5 +15,10 @@ public class button_click : MonoBehaviour
     public void StartMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void ShowInstructions()
+    {
+        instructions.SetActive(true);
     }
 }
