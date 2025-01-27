@@ -22,7 +22,8 @@ namespace Player.Movement
         {
             if (player_health.dead || player_collision.hit) return;
 
-            player_collision.hit = true;
+            Debug.Log("Damage player");
+
             sprite.color = new Color(sprite.color.r - damage, sprite.color.g - damage, sprite.color.b - damage, 1);
             CleanCheck();
         }

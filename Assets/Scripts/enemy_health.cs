@@ -1,5 +1,5 @@
-using Player.Movement;
 using UnityEngine;
+using System.Collections;
 
 namespace Enemy.behaviour
 {
@@ -7,31 +7,38 @@ namespace Enemy.behaviour
     {
         [SerializeField] private float damageMultiplier;
         [SerializeField] private int points;
-        private SpriteRenderer renderer;
+        private SpriteRenderer sprite;
 
         private void Awake()
         {
-            renderer = GetComponent<SpriteRenderer>();
+            sprite = GetComponent<SpriteRenderer>();
         }
         public void Damage(float damage)
         {
             damage = damage * damageMultiplier;
-            renderer.color = new Color(renderer.color.r + damage, renderer.color.g + damage, renderer.color.b + damage);
+            sprite.color = new Color(sprite.color.r + damage, sprite.color.g + damage, sprite.color.b + damage);
             CleanCheck();
         }
 
         private void CleanCheck()
         {
-            if(renderer.color.r >= 0.74901961f)
+            if(sprite.color.r >= 0.74901961f)
             {
                 score.Score += points;
-                renderer.color = new Color(1, 1, 1);
+                sprite.color = new Color(1, 1, 1);
                 var colliders = GetComponents<Collider2D>();
                 colliders[0].enabled = false;
                 colliders[1].enabled = false;
                 GetComponent<enemy_movement>().enabled = false;
-                Destroy(this.gameObject);
+                StartCoroutine(wait());
             }
         }
+
+        IEnumerator wait()
+        {
+            yield return new WaitForSeconds(1);
+            Destroy(this.gameObject);
+        }
+
     }
 }
