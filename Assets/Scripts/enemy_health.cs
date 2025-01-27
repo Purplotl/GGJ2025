@@ -6,6 +6,7 @@ namespace Enemy.behaviour
     public class enemy_health : MonoBehaviour
     {
         [SerializeField] private float damageMultiplier;
+        [SerializeField] private int points;
         private SpriteRenderer renderer;
 
         private void Awake()
@@ -23,7 +24,7 @@ namespace Enemy.behaviour
         {
             if(renderer.color.r >= 0.74901961f)
             {
-                score.Score += 1;
+                score.Score += points;
                 renderer.color = new Color(1, 1, 1);
                 var colliders = GetComponents<Collider2D>();
                 colliders[0].enabled = false;

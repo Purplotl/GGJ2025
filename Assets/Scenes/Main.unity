@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMultiplier: 15
+  points: 1
 --- !u!114 &48919095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,6 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMultiplier: 1
+  points: 5
 --- !u!114 &642235878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2481,6 +2483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMultiplier: 5
+  points: 3
 --- !u!114 &1468070852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7730,6 +7733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMultiplier: 10
+  points: 2
 --- !u!114 &1722806728
 MonoBehaviour:
   m_ObjectHideFlags: 0
