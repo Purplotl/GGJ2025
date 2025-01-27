@@ -7,24 +7,47 @@ namespace Player.Movement
     {
         [SerializeField] private player_health playerHealth;
 
-        static public bool iFrames;
+        [SerializeField] private float invincible;
+        [SerializeField] private int flashNumber;
+        [SerializeField] private SpriteRenderer sprite;
 
-        private void OnTriggerStay2D(Collider2D collision)
+        static public bool hit;
+        private Coroutine flashCoroutine;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (player_health.dead) return;
-
-            if (iFrames) return;
+            if (player_health.dead || hit) return;
 
             playerHealth.Damage(0.1f);
-            iFrames = true;
 
-            StartCoroutine(Wait());
+            Physics2D.IgnoreLayerCollision(6, 7, true);
+
+            if (flashCoroutine != null)
+            {
+                StopCoroutine(flashCoroutine);
+            }
+
+            flashCoroutine = StartCoroutine(Flash());
         }
 
-        private IEnumerator Wait()
+        private IEnumerator Flash()
         {
-            yield return new WaitForSeconds(1);
-            iFrames = false;
+            for (int i = 0; i < flashNumber; i++)
+            {
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+                yield return new WaitForSeconds(invincible / flashNumber);
+
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
+                yield return new WaitForSeconds(invincible / flashNumber);
+            }
+
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
+
+            flashCoroutine = null;
+
+            hit = false;
+
+            Physics2D.IgnoreLayerCollision(6, 7, false);
         }
     }
 }

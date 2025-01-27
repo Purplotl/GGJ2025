@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b84b6155380a4942a7a15528c40dfd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.25
+  speed: 9
 --- !u!114 &48919094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +339,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 780590032}
+  invincible: 0.75
+  flashNumber: 10
+  sprite: {fileID: 985043758}
 --- !u!1 &118981108
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +689,6 @@ GameObject:
   m_Component:
   - component: {fileID: 270506634}
   - component: {fileID: 270506633}
-  - component: {fileID: 270506632}
   - component: {fileID: 270506631}
   - component: {fileID: 270506635}
   m_Layer: 0
@@ -740,14 +742,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &270506632
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270506629}
-  m_Enabled: 1
 --- !u!20 &270506633
 Camera:
   m_ObjectHideFlags: 0
@@ -1818,6 +1812,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 780590032}
+  invincible: 0.75
+  flashNumber: 10
+  sprite: {fileID: 985043758}
 --- !u!1 &780590024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,7 +1986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fff422c93282264db04e76ba10c520b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 985043758}
+  sprite: {fileID: 985043758}
   gameOver: {fileID: 1946887037}
 --- !u!1 &977911987
 GameObject:
@@ -2754,6 +2751,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 780590032}
+  invincible: 0.75
+  flashNumber: 10
+  sprite: {fileID: 985043758}
 --- !u!1 &1469554730
 GameObject:
   m_ObjectHideFlags: 0
@@ -7871,7 +7871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b84b6155380a4942a7a15528c40dfd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
 --- !u!114 &1722806727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8041,6 +8041,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 780590032}
+  invincible: 0.75
+  flashNumber: 10
+  sprite: {fileID: 985043758}
 --- !u!1 &1880972150
 GameObject:
   m_ObjectHideFlags: 0
