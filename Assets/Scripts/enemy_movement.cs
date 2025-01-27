@@ -12,7 +12,7 @@ namespace Enemy.behaviour
             target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             LookAt(target.position);
 

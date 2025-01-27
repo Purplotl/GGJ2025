@@ -12,7 +12,7 @@ public class camera_follow : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Vector3 pos = new Vector3(player.position.x, player.position.y, -10f);
+        Vector3 pos = new Vector3(player.position.x, player.position.y, transform.position.z);
         transform.position = Vector3.SmoothDamp(transform.position, pos, ref velocity, panTime);
     }
 }
